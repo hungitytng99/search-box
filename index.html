@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search-box</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./fontawesome-free-5.14.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="content">
+        <div class="search-box">
+            <div class="search-icon">
+                <i class="search-icon-location fas fa-map-marker-alt"></i>
+            </div>
+            <input id="search-input" type="text" onkeyup="search()" class="search-text" placeholder="Địa điểm đi" autocomplete="off">
+            <!-- Dropdown -->
+            <div class="search-content">
+                <ul class="search-list">
+                    <li class="search-item" onclick="setInput(this)">
+                        <div class="search-item__link">Đồng Hới - Đồng Hới(VDH) - Việt Nam</div>
+                    </li>
+                    <li class="search-item" onclick="setInput(this)">
+                        <div class="search-item__link">Tuy Hòa - Tuy Hòa (TBB) - Việt Nam</div>
+                    </li>
+                    <li class="search-item" onclick="setInput(this)">
+                        <div class="search-item__link">Điện Biên Phủ - Điện Biên Phủ (DIN) - Việt Nam</div>
+                    </li>
+                    <li class="search-item" onclick="setInput(this)">
+                        <div class="search-item__link">Hà Nội - Nội Bài (HAN) - Việt Nam</div>
+
+                    </li>
+                    <li class="search-item" onclick="setInput(this)">
+                        <div class="search-item__link">Pleiku - Pleiku (PXU) - Việt Nam</div>
+                    </li>
+                    <li class="search-item" onclick="setInput(this)">
+                        <div class="search-item__link">Hải phòng - Cát Bi (HPH) - Việt Nam</div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+    </div>
+
+    <button onclick="setInput(this)">ddd</button>
+
+
+</body>
+<script src="main.js"></script>
+
+</html>
